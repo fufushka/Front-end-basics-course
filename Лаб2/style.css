@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 24px 64px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: #1b1b1b;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+.page-head h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 0 0 4px;
+  color: #444c4c;
+}
+
+main section {
+  margin-top: 40px;
+}
+
+main h2 {
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+.sq {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #000000;
+  border-radius: 16px;
+}
+
+.sq--blue {
+  background-color: #b7cce4;
+}
+
+.sq--yellow {
+  background-color: #ffff00;
+}
+
+.sq--pink {
+  background-color: #cc0066;
+}
+
+.art {
+  width: 380px;
+  height: 330px;
+}
+
+.art--position {
+  position: relative;
+}
+
+.art--position .sq {
+  position: absolute;
+}
+
+.art--position .sq--blue {
+  left: 130px;
+  top: 37px;
+  transform: rotate(45deg);
+}
+
+.art--position .sq--yellow {
+  left: 45px;
+  top: 173px;
+  transform: rotate(20deg);
+}
+
+.art--position .sq--pink {
+  left: 215px;
+  top: 173px;
+  transform: rotate(-20deg);
+}
+
+.art--transform {
+  display: grid;
+  place-items: center;
+}
+
+.art--transform .sq {
+  grid-area: 1 / 1;
+}
+
+.art--transform .sq--blue {
+  transform: translate(0, -68px) rotate(45deg);
+}
+
+.art--transform .sq--yellow {
+  transform: translate(-85px, 68px) rotate(20deg);
+}
+
+.art--transform .sq--pink {
+  transform: translate(85px, 68px) rotate(-20deg);
+}
+
+.figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.figure {
+  margin: 0;
+}
+
+.figure figcaption {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #444c4c;
+  text-align: center;
+  max-width: 380px;
+}

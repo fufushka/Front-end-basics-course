@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Пустоляков, Дмитро, лабораторна робота, HTML5, CSS3, таблиці, transform, position, КПІ, ІК-41"
+    />
+    <meta
+      name="description"
+      content="Лабораторна робота №2 з курсу «Основи FE-технологій»: таблиця в HTML-5 та створення зображення засобами position і transform у CSS-3."
+    />
+    <title>Пустоляков Д.Є., гр. ІК-41 - Лабораторна робота №2</title>
+
+    <style>
+      .info-table {
+        --row-1-bg: #138f8f;
+        --row-1-ink: #041a1a;
+        --row-2-bg: #f5f513;
+        --row-2-ink: #1a1a00;
+
+        width: 100%;
+        max-width: 900px;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+
+      .info-table td {
+        height: 48px;
+        padding: 8px 12px;
+        border: 2px solid #1b1b1b;
+        vertical-align: middle;
+      }
+
+      .info-table .row-1 {
+        background-color: var(--row-1-bg);
+        color: var(--row-1-ink);
+        font-size: 20px;
+        font-weight: 600;
+        transition:
+          background-color 0.25s ease,
+          color 0.25s ease;
+      }
+
+      .info-table .row-2 {
+        background-color: var(--row-2-bg);
+        color: var(--row-2-ink);
+        font-weight: 600;
+        transition:
+          background-color 0.25s ease,
+          color 0.25s ease;
+      }
+
+      .info-table .row-1:hover {
+        background-color: var(--row-2-bg);
+        color: var(--row-2-ink);
+      }
+
+      .info-table .row-2:hover {
+        background-color: var(--row-1-bg);
+        color: var(--row-1-ink);
+      }
+
+      .info-table .row-plain {
+        background-color: #f2f4f5;
+        color: #1b1b1b;
+      }
+
+      .info-table .label {
+        font-weight: 600;
+      }
+
+      .info-table .seq-list {
+        display: flex;
+        gap: 18px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="page-head">
+      <h1>Лабораторна робота №2</h1>
+      <p class="subtitle">
+        Тема: «Таблиці в HTML-5. Створення зображень засобами трансформацій в
+        CSS-3»
+      </p>
+      <p class="subtitle">
+        Пустоляков Дмитро Євгенійович, гр. ІК-41 - варіант 13 (завдання варіанта
+        3)
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Завдання 1. Таблиця за варіантом 3</h2>
+
+        <table class="info-table">
+          <colgroup>
+            <col />
+            <col />
+            <col />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr class="row-1">
+              <td rowspan="2">Пустоляков</td>
+              <td>Дмитро</td>
+              <td colspan="2" rowspan="2">Євгенійович</td>
+            </tr>
+
+            <tr class="row-2">
+              <td>
+                <div class="seq-list">
+                  <span>ІК-41</span>
+                  <span>ЛР-2</span>
+                  <span>Варіант 13</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="row-plain">
+              <td class="label">Дисципліна</td>
+              <td>Основи FE-технологій</td>
+              <td class="label">Факультет</td>
+              <td>ФІОТ, кафедра ІСТ</td>
+            </tr>
+
+            <tr class="row-plain">
+              <td class="label">Тема</td>
+              <td>Таблиці в HTML-5</td>
+              <td colspan="2">
+                Створення зображень засобами трансформацій в CSS-3
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Завдання 2. Зображення за варіантом 3</h2>
+
+        <div class="figures">
+          <figure class="figure">
+            <div class="art art--position">
+              <div class="sq sq--blue"></div>
+              <div class="sq sq--yellow"></div>
+              <div class="sq sq--pink"></div>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <div class="art art--transform">
+              <div class="sq sq--blue"></div>
+              <div class="sq sq--yellow"></div>
+              <div class="sq sq--pink"></div>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
