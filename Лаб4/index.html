@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="keywords"
+      content="Пустоляков, Дмитро, лабораторна робота, JavaScript, DOM, getElementById, querySelector, КПІ, ІК-41"
+    >
+    <meta
+      name="description"
+      content="Лабораторна робота №4 з курсу «Основи FE-технологій»: доступ до властивостей і методів обʼєктів DOM."
+    >
+    <title>Пустоляков Д.Є., гр. ІК-41 - Лабораторна робота №4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Пустоляков Дмитро Євгенійович</h1>
+
+    <p>Місце народження: 28 грудня 2006 року, м. Київ.</p>
+
+    <p id="education" class="clickable">
+      Освіта: Закінчив гімназію №323 у місті Києві. Зараз навчаюсь на 3 курсі
+      Національного технічного університету України «Київський політехнічний
+      інститут імені Ігоря Сікорського» за спеціальністю 126 «Інформаційні
+      системи та технології».
+    </p>
+
+    <h2 class="hobby-title clickable">Хобі</h2>
+    <ul>
+      <li>Настільний теніс</li>
+      <li>Чаювання</li>
+      <li>Риболовля</li>
+    </ul>
+
+    <h2>Улюблені фільми</h2>
+    <ol>
+      <li>«Кіборги»</li>
+      <li>«Інтерстеллар»</li>
+      <li>«Одіссея»</li>
+      <li>«Джентльмени»</li>
+    </ol>
+
+    <h2>Улюблене місто</h2>
+    <p>
+      Найбільше з усіх міст, де мені довелося побувати, запам'ятався Рим —
+      столиця Італії з понад двохтисячолітньою історією, де античні руїни
+      сусідять із затишними вуличками сучасного мегаполіса. Колізей, Пантеон,
+      Ватикан і фонтан Треві справляють неповторне враження, а тепла атмосфера
+      міста робить його одним із найкращих місць для подорожей.
+    </p>
+
+    <a href="https://www.turismoroma.it/">
+      <img src="img/rome-colosseum.jpg" alt="Колізей у Римі" width="500">
+    </a>
+
+    <div id="image-box" class="image-box"></div>
+
+    <div class="controls">
+      <button type="button" id="add-image">Додати</button>
+      <button type="button" id="zoom-in" disabled>Збільшити</button>
+      <button type="button" id="zoom-out" disabled>Зменшити</button>
+      <button type="button" id="remove-image" disabled>Видалити</button>
+    </div>
+  </body>
+</html>
